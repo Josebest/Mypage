@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz web</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo img {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffc107;
+        }
+
+        /* Section Titles */
+        h1, h2 {
+            color: #343a40;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        /* Text */
+        p {
+            color: #6c757d;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Image Sections */
+        section img {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        section img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Form */
+        form {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        form .form-label {
+            font-weight: bold;
+            color: #343a40;
+        }
+
+        form input {
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 15px 0;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Buttons and Links */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Custom Borders */
+        .border {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo fw-bold"><img src="Assets/Logo JR.webp" alt="Logo"></div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Productos.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Company.html">Company</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container py-5">
+        <!-- Section 1: Introductory Text -->
+        <section class="text-center mb-5">
+            <h1 class="display-4">Consígue tu camiseta preferida</h1>
+            <p class="lead">Explora entre variedades de productos y compra la de tu equipo</p>
+        </section>
+
+        <!-- Section 2: Image and Text -->
+        <section class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <p class="text-muted">Nuestro amplio repertorio de las mejores estrellas del fútbol</p>
+            </div>
+            <div class="col-md-4">
+                <div class="border bg-light d-flex justify-content-center align-items-center" style="height: 200px;">
+                    <img src="Assets/raphi.jpg" alt="Raphael">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Image Grid -->
+        <section class="row text-center mb-5">
+            <div class="col-md-4">
+                <div class="border bg-light d-flex justify-content-center align-items-center" style="height: 150px;">
+                    <img src="Assets/vini.jpg" alt="vini">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="border bg-light d-flex justify-content-center align-items-center" style="height: 150px;">
+                    <img src="Assets/salah.jpg" alt="mo">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="border bg-light d-flex justify-content-center align-items-center" style="height: 150px;">
+                    <img src="Assets/wirtz.jpg" alt="florian">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Form -->
+        <section class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <h2 class="h4">Únete a nuestra comunidad</h2>
+                <p class="text-muted">Ayudanos a ofrecer lo mejor del mercado</p>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Section 5: Map and Text -->
+        <section class="row mb-5">
+            <div class="col-md-6">
+                <div class="border bg-light d-flex justify-content-center align-items-center" style="height: 100px;">
+                    <img src="Assets/estadios.webp" alt="estadios">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="h4">Explora información de referencia de tu equipo</h2>
+                <p class="text-muted">Acceso directo a la page oficial de la UEFA <a href="https://www.uefa.com/uefachampionsleague/" class="text-primary">Click aquí</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3 mt-4">
+        <div class="container">
+            <p>&copy; 2025 JR Sports</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
